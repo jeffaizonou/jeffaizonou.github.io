@@ -1,0 +1,888 @@
+/* =========================
+   RESET GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:"Segoe UI", Arial, sans-serif;
+
+    background:#050505;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+/* =========================
+   MATRIX BACKGROUND
+========================= */
+
+
+#matrix{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-1;
+
+    opacity:0.25;
+
+}
+
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(0,0,0,0.75);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(0,255,255,0.4);
+
+    z-index:1000;
+
+}
+
+
+
+.logo{
+
+    color:#00ffff;
+
+    font-size:25px;
+
+    letter-spacing:2px;
+
+    text-shadow:
+    0 0 10px cyan;
+
+}
+
+
+
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:25px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+
+
+nav a:hover{
+
+    color:#00ffff;
+
+    text-shadow:
+    0 0 10px cyan;
+
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+#typing{
+
+    color:#00ffff;
+
+    text-shadow:
+    0 0 10px cyan,
+    0 0 30px cyan;
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    color:#ccc;
+
+    max-width:700px;
+
+}
+
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 35px;
+
+    color:#00ffff;
+
+    border:2px solid #00ffff;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+    box-shadow:
+    0 0 10px cyan;
+
+}
+
+
+
+.btn:hover{
+
+    background:#00ffff;
+
+    color:black;
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 50px cyan;
+
+}
+
+
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+
+.section{
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+
+
+.section h2{
+
+    font-size:35px;
+
+    margin-bottom:40px;
+
+    color:#00ffff;
+
+    text-shadow:
+    0 0 10px cyan;
+
+}
+
+
+
+.section p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#ddd;
+
+    font-size:18px;
+
+}
+
+
+
+/* =========================
+   SKILLS
+========================= */
+
+
+.skills{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+
+
+.skills span{
+
+    padding:12px 25px;
+
+    border:1px solid cyan;
+
+    border-radius:25px;
+
+    color:#00ffff;
+
+    background:rgba(0,255,255,0.05);
+
+    transition:.3s;
+
+}
+
+
+
+.skills span:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 20px cyan;
+
+}
+
+
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+
+.projects-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+
+.card{
+
+    width:300px;
+
+    padding:30px;
+
+    background:
+
+    rgba(0,0,0,0.7);
+
+
+    border:1px solid rgba(0,255,255,0.5);
+
+    border-radius:15px;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.card h3{
+
+    color:#00ffff;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card p{
+
+    font-size:16px;
+
+}
+
+
+
+
+.card:hover{
+
+
+    transform:translateY(-15px);
+
+
+    box-shadow:
+
+    0 0 20px cyan;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+header{
+
+    flex-direction:column;
+
+}
+
+
+nav{
+
+    margin-top:15px;
+
+}
+
+
+nav a{
+
+    margin:8px;
+
+    font-size:14px;
+
+}
+
+
+.hero h2{
+
+    font-size:30px;
+
+}
+
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+
+.section{
+
+    padding:80px 5%;
+
+}
+
+
+}
+
+
+
+/*Ajouté après*/
+
+/* PHOTO PROFIL */
+
+
+.profile{
+
+width:180px;
+
+height:180px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:3px solid cyan;
+
+box-shadow:
+0 0 20px cyan,
+0 0 50px rgba(0,255,255,.5);
+
+margin-bottom:30px;
+
+}
+
+
+
+
+/* SOCIAL BUTTONS */
+
+
+.social{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+/* ANIMATION SCROLL */
+
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:1s;
+
+}
+
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+/* =========================
+   FORMATION ET EXPERIENCE
+========================= */
+
+.timeline,
+.experience-container {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* Cartes de formation */
+
+.timeline .card {
+
+    flex: 1 1 320px;
+
+    max-width: 400px;
+
+    min-height: 220px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+/* Carte de l'expérience */
+
+.experience-container .card {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    min-height: 220px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.timeline .card h3,
+.experience-container .card h3 {
+
+    color: #00ffff;
+
+    margin-bottom: 20px;
+
+    font-size: 22px;
+
+}
+
+
+.timeline .card p,
+.experience-container .card p {
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+/*Pour le bouton de changement de la langue*/
+/* =========================
+   BOUTONS DU HEADER
+========================= */
+
+.header-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.icon-btn {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: 1px solid #00ffff;
+
+    border-radius: 50%;
+
+    background: rgba(0, 255, 255, 0.08);
+
+    color: #00ffff;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.icon-btn:hover {
+
+    background: #00ffff;
+
+    color: #050505;
+
+    box-shadow: 0 0 20px #00ffff;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================
+   MODE CLAIR
+========================= */
+
+body.light-mode {
+
+    background: #f4f7fa;
+
+    color: #14212b;
+
+}
+
+
+body.light-mode header {
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border-bottom-color: rgba(0, 130, 140, 0.35);
+
+}
+
+
+body.light-mode nav a {
+
+    color: #14212b;
+
+}
+
+
+body.light-mode nav a:hover {
+
+    color: #008c96;
+
+}
+
+
+body.light-mode .hero p,
+body.light-mode .section p {
+
+    color: #425466;
+
+}
+
+
+body.light-mode .card {
+
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #14212b;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+body.light-mode .card p {
+
+    color: #425466;
+
+}
+
+
+body.light-mode #matrix {
+
+    opacity: 0.06;
+
+}
+
+/*after*/
+/* =========================
+   HEADER MOBILE
+========================= */
+
+@media(max-width:768px) {
+
+    header {
+
+        padding: 15px 5%;
+
+        gap: 12px;
+
+    }
+
+
+    .logo {
+
+        font-size: 21px;
+
+    }
+
+
+    nav {
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 5px;
+
+    }
+
+
+    nav a {
+
+        margin: 5px 7px;
+
+        font-size: 13px;
+
+    }
+
+
+    .header-actions {
+
+        margin-top: 5px;
+
+    }
+
+
+    .section {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .section h2 {
+
+        font-size: 29px;
+
+    }
+
+
+    .timeline .card,
+    .experience-container .card {
+
+        max-width: 100%;
+
+        min-height: auto;
+
+        padding: 28px 20px;
+
+    }
+
+}
+
+
+/* ===== PROJETS ===== */
+.subtitle{ color:#fff; font-size:22px; margin:10px 0 25px; letter-spacing:1px; }
+.projects-container{ margin-bottom:40px; }
+.card.project{ position:relative; display:flex; flex-direction:column; align-items:center; text-align:center; }
+.card.project h3{ margin-top:12px; }
+.badge{ position:absolute; top:12px; right:14px; font-size:12px; padding:3px 10px; border-radius:20px; border:1px solid; }
+.badge.done{ color:#00ff9d; border-color:#00ff9d; }
+.badge.wip{ color:#ffb347; border-color:#ffb347; }
+.proj-links{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:auto; padding-top:18px; }
+.proj-links a{ color:#00ffff; text-decoration:none; font-size:14px; padding:6px 14px; border:1px solid rgba(0,255,255,.6); border-radius:20px; transition:.3s; }
+.proj-links a:hover{ background:#00ffff; color:#000; }
+.proj-links a[href="#"]{ display:none; }
+
+/* ===== MODE CLAIR : rendu net, sans halo ===== */
+body.light-mode .logo,
+body.light-mode .section h2,
+body.light-mode #typing,
+body.light-mode nav a:hover{
+    text-shadow:none;
+    color:#006d75;
+}
+body.light-mode .logo{ font-weight:800; }
+body.light-mode header{ border-bottom:1px solid #0a8f99; }
+body.light-mode .subtitle{ color:#14212b; }
+
+body.light-mode .card{
+    border:1.5px solid #0a8f99;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+body.light-mode .card h3{ color:#006d75; }
+body.light-mode .card:hover{
+    box-shadow:0 8px 20px rgba(0,109,117,.18);
+}
+
+body.light-mode .btn,
+body.light-mode .icon-btn,
+body.light-mode .skills span,
+body.light-mode .proj-links a{
+    color:#006d75;
+    border:1.5px solid #0a8f99;
+    background:#fff;
+    box-shadow:none;
+}
+body.light-mode .btn:hover,
+body.light-mode .icon-btn:hover,
+body.light-mode .proj-links a:hover{
+    background:#0a8f99;
+    color:#fff;
+    box-shadow:none;
+}
+body.light-mode .skills span:hover{
+    box-shadow:0 4px 10px rgba(0,109,117,.2);
+}
+
+body.light-mode .profile{
+    border:3px solid #0a8f99;
+    box-shadow:0 4px 14px rgba(0,0,0,.15);
+}
+body.light-mode .badge.done{ color:#0a7a4b; border-color:#0a7a4b; }
+body.light-mode .badge.wip{ color:#b36200; border-color:#b36200; }
